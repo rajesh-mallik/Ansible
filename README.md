@@ -9,4 +9,5 @@ ansible --version
 vi hosts #create hosts file
 sed -i 's;host_key_checking=True;host_key_checking=False;g' ansible.cfg
 vi ansible.pem  #create pem file
+chmod 400 ansible.pem 
 ansible -m ping [webserver]
